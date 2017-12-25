@@ -11,6 +11,7 @@ if (!cacheDir.exists()) cacheDir.mkdirs();
 mDiskLruCache = DiskLruCache.open(cacheDir, AppUtils.getAppVersionCode(), 1, 50 * 1024 * 1024);
 ```
 3. 加载缓存
+
 *`先判断本地是否有缓存，如果没有则从网络中加载缓存，否则直接加载本地缓存`*
 * 将图片链接转换成MD5编码
 ```
@@ -65,11 +66,15 @@ if (imageView != null) imageView.setImageBitmap(bitmap);
 ![cry.jpg](http://upload-images.jianshu.io/upload_images/4073499-9f06245b6445a0a9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 5. 参考链接
+
 [Demo中用到的图片源，采用的郭霖大神的图片][1]
+
 [用到了快速开发工具库][2]
+
 [用到了RecyclerView的万能适配Adapter][3]
 
 6. 博客传送门
+
 DiskLruCache:<https://www.jianshu.com/p/35f939874960>
 
 
