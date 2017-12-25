@@ -1,5 +1,3 @@
-## DiskLruCache 本地缓存使用
-
 ### DiskLruCache使用的步骤
 1. 创建缓存路径
 ```
@@ -58,3 +56,24 @@ try {
 ```
 if (imageView != null) imageView.setImageBitmap(bitmap);
 ```
+4. 效果图
+![cache.gif](http://upload-images.jianshu.io/upload_images/4073499-cfd0cca6d06ec51a.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+录制了半天老是有花脸 
+![cry.jpg](http://upload-images.jianshu.io/upload_images/4073499-9f06245b6445a0a9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+5. 参考链接
+[Demo中用到的图片源，采用的郭霖大神的图片][1]
+[用到了快速开发工具库][2]
+[用到了RecyclerView的万能适配Adapter][3]
+6. 源码传送门
+DiskLruCache:<https://www.jianshu.com/p/35f939874960>
+7. 题外
+> 使用模拟器出现的意料错误，真机没有出现，通过Google搜索发现是`依赖库版本不一致导致的异常`
+```
+java.lang.ClassNotFoundException: Didn't find class "cn.net.sunet.disklrucache.Mainactivity" on path: DexPathList[[zip file "/data/app/cn.net.sunet.disklrucache-2/base.apk", zip file "/data/app/cn.net.sunet.disklrucache-2/split_lib_slice_9_apk.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]。
+```
+**如果大家觉得还行请给个赞，谢谢**
+
+[1]:http://blog.csdn.net/guolin_blog/article/details/34093441
+[2]:https://github.com/Blankj/AndroidUtilCode
+[3]:https://github.com/CymChad/BaseRecyclerViewAdapterHelper
