@@ -58,6 +58,7 @@ if (imageView != null) imageView.setImageBitmap(bitmap);
 ```
 4. 效果图
 ![cache.gif](http://upload-images.jianshu.io/upload_images/4073499-cfd0cca6d06ec51a.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 录制了半天老是有花脸 
 ![cry.jpg](http://upload-images.jianshu.io/upload_images/4073499-9f06245b6445a0a9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
